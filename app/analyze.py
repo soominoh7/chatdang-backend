@@ -116,6 +116,12 @@ def analyze(p, grams=None):
         names = {"allulose": "알룰로스", "sugar_alcohol": "당알코올"}
         parts = [f"{names.get(k, k)} {v}g" for k, v in sw.items() if v]
         r["reasons"].append(f"탄수화물 {n['carb']}g(100g당) 중 {', '.join(parts)}은(는) 혈당을 거의 올리지 않거나 적게 올려서 계산에서 따로 봤어요.")
+    polyols = [b["ingredient"] for b in r["breakdown"] if b["kind"] == "polyol"] + \
+              [b["ingredient"] for b in r["breakdown"] if b["ingredient"] in ("에리스리톨", "만니톨")]
+    if polyols or sw.get("sugar_alcohol"):
+        who = f"{', '.join(polyols[:2])} 같은 당알코올은" if polyols else "당알코올이 들어 있어서"
+        r["reasons"].append(f"{who} 한 번에 많이 먹으면 배가 아프거나 설사를 할 수 있어요. 처음엔 1회 섭취량만큼만 드셔 보세요.")
+        r["caution"] = "당알코올 과량 섭취 시 배탈 주의"
     if needs_check(p):
         r["reasons"].append("감미료가 들어 있다고 표시됐는데 함량을 읽지 못했어요. 숨은 탄수화물이 실제보다 크게 나왔을 수 있어요.")
     if p.get("nutritionSource") == "estimated":
