@@ -1,0 +1,2722 @@
+[
+ {
+  "id": "photo_8809634870865",
+  "name": "마이노멀 말차초코볼 아몬드",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8809634870865",
+  "frontClaims": [
+   "저당",
+   "LOW SUGAR",
+   "KETO LIFESTYLE"
+  ],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": 30.0,
+   "unit": "g",
+   "basis": null
+  },
+  "photos": [
+   "20261109_125635.jpg",
+   "20261109_125645.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809634870858",
+  "name": "",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8809634870858",
+  "frontClaims": [],
+  "per100g": {
+   "carb": 40.0,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": 30.0,
+   "unit": "g",
+   "basis": "total"
+  },
+  "photos": [
+   "20261109_125650.jpg",
+   "20261109_125656.jpg"
+  ],
+  "missing": [
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809396883479",
+  "name": "라칸토 제로캔디 말차우유맛",
+  "maker": "OHKURA SEIKA CO., LTD / (주)사라아코리아",
+  "category": "캔디류",
+  "source": "photo_ai",
+  "barcode": "8809396883479",
+  "frontClaims": [
+   "0 kcal",
+   "Zero Sugar",
+   "당알코올 함유",
+   "나한과 추출물 함유"
+  ],
+  "per100g": {
+   "carb": 100.0,
+   "sugar": 0.0,
+   "fiber": 0.0,
+   "sweeteners": {
+    "sugar_alcohol": 97.5
+   }
+  },
+  "ingredients": [
+   [
+    "에리스리톨",
+    "폴리덱스트로스",
+    "정제소금",
+    "잔탄검",
+    "DL-사과산",
+    "천연향료",
+    "나한과추출물",
+    "헤마토코크스 우유함유"
+   ],
+   [
+    "에리스리톨",
+    "감미료",
+    "폴리덱스트로스",
+    "정제소금",
+    "잔탄검",
+    "DL-사과산",
+    "천연향료",
+    "딸기크림향",
+    "나한과추출물",
+    "헤마토코크스 우유함유"
+   ]
+  ],
+  "ingredientsText": "에리스리톨(감미료), 폴리덱스트로스, 정제소금, 잔탄검, DL-사과산, 천연향료(딸기크림향), 나한과추출물, 헤마토코크스 우유함유",
+  "servingSize": {
+   "value": 40.0,
+   "unit": "g",
+   "basis": "total"
+  },
+  "photos": [
+   "20261109_125706.jpg",
+   "20261109_125712.jpg"
+  ],
+  "missing": [],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809396883462",
+  "name": "라칸토 제로캔디 밀크커피맛",
+  "maker": "OHKURA SEIKA CO, LTD",
+  "category": "캔디류",
+  "source": "photo_ai",
+  "barcode": "8809396883462",
+  "frontClaims": [
+   "Zero Sugar",
+   "0 kcal",
+   "당알코올 함유",
+   "나한과 추출물 함유"
+  ],
+  "per100g": {
+   "carb": 100.0,
+   "sugar": 0.0,
+   "fiber": 1.25,
+   "sweeteners": {
+    "sugar_alcohol": 97.5
+   }
+  },
+  "ingredients": [
+   [
+    "에리스리톨",
+    "폴리덱스트로스",
+    "잔탄검",
+    "녹차",
+    "정제소금",
+    "천연향료",
+    "나한과추출물 우유함유"
+   ],
+   [
+    "에리스리톨",
+    "감미료",
+    "폴리덱스트로스",
+    "잔탄검",
+    "녹차",
+    "정제소금",
+    "천연향료",
+    "그린티밀크향",
+    "나한과추출물 우유함유"
+   ]
+  ],
+  "ingredientsText": "에리스리톨(감미료), 폴리덱스트로스, 잔탄검, 녹차, 정제소금, 천연향료(그린티밀크향), 나한과추출물 우유함유",
+  "servingSize": {
+   "value": 40.0,
+   "unit": "g",
+   "basis": "total"
+  },
+  "photos": [
+   "20261109_125715.jpg",
+   "20261109_125728.jpg"
+  ],
+  "missing": [],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809396883486",
+  "name": "라칸토 제로캔디(밀크커피맛)",
+  "maker": "OHKURA SEIKA CO, LTD (제조사) / (주)사라아코리아 (수입판매업소)",
+  "category": "캔디류",
+  "source": "photo_ai",
+  "barcode": "8809396883486",
+  "frontClaims": [
+   "0 kcal",
+   "깊고 진한 커피맛",
+   "부드러운 밀크맛"
+  ],
+  "per100g": {
+   "carb": 100.0,
+   "sugar": 0.0,
+   "fiber": 1.25,
+   "sweeteners": {
+    "sugar_alcohol": 97.5
+   }
+  },
+  "ingredients": [
+   [
+    "에리스리톨",
+    "폴리덱스트로스",
+    "나한과추출물",
+    "잔탄검",
+    "커피원두",
+    "정제소금",
+    "천연향료",
+    "우유함유"
+   ],
+   [
+    "에리스리톨",
+    "감미료",
+    "폴리덱스트로스",
+    "나한과추출물",
+    "잔탄검",
+    "커피원두",
+    "정제소금",
+    "천연향료",
+    "밀크커피향",
+    "우유함유"
+   ]
+  ],
+  "ingredientsText": "에리스리톨(감미료), 폴리덱스트로스, 나한과추출물, 잔탄검, 커피원두, 정제소금, 천연향료(밀크커피향), 우유함유",
+  "servingSize": {
+   "value": 40.0,
+   "unit": "g",
+   "basis": "total"
+  },
+  "photos": [
+   "20261109_125733.jpg",
+   "20261109_125747.jpg",
+   "20261109_125752.jpg",
+   "20261109_125813.jpg"
+  ],
+  "missing": [],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809765671096",
+  "name": "Lukt Pistachio Soboro Granola / 룩트 피스타치오 소보로 그래놀라",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8809765671096",
+  "frontClaims": [
+   "Soboro Covered Oat Granola",
+   "Pistachios with Nutty Crumbles"
+  ],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": null,
+   "unit": "g",
+   "basis": null
+  },
+  "photos": [
+   "20261109_125819.jpg",
+   "20261109_125825.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809765671126",
+  "name": "Lukt Earl Grey Cookie Cereal (룩트 얼그레이 쿠키 시리얼)",
+  "maker": "(주)아티튜드 (구입처 및 판매원)",
+  "category": "곡류가공품",
+  "source": "photo_ai",
+  "barcode": "8809765671126",
+  "frontClaims": [
+   "Oven Baked Cookie Bites",
+   "Whole Wheat Cereal with Earl Grey"
+  ],
+  "per100g": {
+   "carb": 44.0,
+   "sugar": 12.0,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [
+   [
+    "유기농귀리 14.5%",
+    "무염버터",
+    "유기농밀 13.8%",
+    "비정제사탕수수 …",
+    "아몬드분말 …",
+    "피스타치오 …",
+    "프락토올리고당 …",
+    "코코넛오일 …",
+    "피스타치오크림(이탈리아산/식물성유지, 설탕, 피스타치오 100%, 이탈리아산) …",
+    "식염 …",
+    "우유",
+    "대두",
+    "밀 함유"
+   ],
+   [
+    "유기농귀리 14.5%",
+    "무염버터",
+    "유기농밀 13.8%",
+    "비정제사탕수수 …",
+    "아몬드분말 …",
+    "피스타치오 …",
+    "프락토올리고당 …",
+    "코코넛오일 …",
+    "피스타치오크림(이탈리아산/식물성유지, 설탕, 피스타치오 100%, 이탈리아산) …",
+    "식염 …",
+    "우유",
+    "대두",
+    "밀 함유",
+    "사진이 흐려 일부 글자 판독 불가"
+   ]
+  ],
+  "ingredientsText": "유기농귀리 14.5%(캐나다산), 무염버터(캐나다산), 유기농밀 13.8%(독일산), 비정제사탕수수 …, 아몬드분말 …, 피스타치오 …, 프락토올리고당 …, 코코넛오일 …, 피스타치오크림(이탈리아산/식물성유지, 설탕, 피스타치오 100%, 이탈리아산) …, 식염 …, 우유, 대두, 밀 함유 (사진이 흐려 일부 글자 판독 불가)",
+  "servingSize": {
+   "value": 25.0,
+   "unit": "g",
+   "basis": "total"
+  },
+  "photos": [
+   "20261109_125827.jpg",
+   "20261109_125833.jpg"
+  ],
+  "missing": [],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809765670280",
+  "name": "룩트 인절미 소보로 그래놀라 (주의: 뒷면 제품명은 '룻트 얼그레이 쿠키 시리얼'이고, 앞면 kcal 125와 뒷면 kcal 135가 달라 서로 다른 제품으로 보입니다)",
+  "maker": "(주)해오름식품 / F1 전북 익산시 왕궁면 (주)아티튜드 / F2 충남 (판독 일부 불확실)",
+  "category": "기타가공품",
+  "source": "photo_ai",
+  "barcode": "8809765670280",
+  "frontClaims": [],
+  "per100g": {
+   "carb": 52.0,
+   "sugar": 16.0,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [
+   [
+    "유기농 밀(국산) 27.3 %",
+    "무염버터",
+    "비정제사탕수수",
+    "청크화이트초콜릿",
+    "식염 3.1 %",
+    "... 스리랑카홍차 ... 밀",
+    "우유",
+    "대두 함유"
+   ],
+   [
+    "유기농 밀(국산) 27.3 %",
+    "무염버터",
+    "유크림100 %",
+    "비정제사탕수수",
+    "청크화이트초콜릿",
+    "설탕",
+    "전지분유",
+    "코코아버터",
+    "탈지분유",
+    "레시틴",
+    "천연향료",
+    "베르가못향",
+    "식염 3.1 %",
+    "... 스리랑카홍차 ... 밀",
+    "우유",
+    "대두 함유",
+    "흐려서 읽히지 않는 부분은 생략됨"
+   ]
+  ],
+  "ingredientsText": "유기농 밀(국산) 27.3 %, 무염버터(유크림100 %, 뉴질랜드산), 비정제사탕수수, 청크화이트초콜릿(설탕, 전지분유, 코코아버터, 탈지분유, 레시틴, 천연향료(베르가못향)), 식염 3.1 %, ... 스리랑카홍차 ... 밀, 우유, 대두 함유 (흐려서 읽히지 않는 부분은 생략됨)",
+  "servingSize": {
+   "value": 25.0,
+   "unit": "g",
+   "basis": "total"
+  },
+  "photos": [
+   "20261109_125837.jpg",
+   "20261109_125842.jpg"
+  ],
+  "missing": [],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809765670457",
+  "name": "룩트 피넛버터 쿠키 시리얼 (Lukt Peanut Butter Cookie Cereal)",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8809765670457",
+  "frontClaims": [
+   "Oven Baked Cookie Bites",
+   "Whole Wheat Cereal with Peanut Butter"
+  ],
+  "per100g": {
+   "carb": 60.0,
+   "sugar": 7.6,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [
+   [
+    "아몬드",
+    "유기농귀리(캐나다산) 18%",
+    "인절미가루",
+    "분당",
+    "볶은소금",
+    "효소처리스테비아",
+    "메이플시럽",
+    "비정제사탕수수",
+    "유기농밀가루",
+    "무염버터",
+    "코코넛오일",
+    "에리스리톨",
+    "해바라기씨유",
+    "태움용융소금",
+    "대두",
+    "우유",
+    "밀 함유"
+   ],
+   [
+    "아몬드",
+    "유기농귀리(캐나다산) 18%",
+    "인절미가루",
+    "백태",
+    "분당",
+    "볶은소금",
+    "효소처리스테비아",
+    "메이플시럽",
+    "비정제사탕수수",
+    "유기농밀가루",
+    "무염버터",
+    "유크림 100%",
+    "코코넛오일",
+    "에리스리톨",
+    "감미료",
+    "해바라기씨유",
+    "태움용융소금",
+    "대두",
+    "우유",
+    "밀 함유"
+   ]
+  ],
+  "ingredientsText": "아몬드(미국산), 유기농귀리(캐나다산) 18%, 인절미가루(백태(국산)), 분당, 볶은소금(국산), 효소처리스테비아, 메이플시럽, 비정제사탕수수, 유기농밀가루(국산 5%), 무염버터(유크림 100%), 코코넛오일, 에리스리톨(감미료), 해바라기씨유, 태움용융소금, 대두, 우유, 밀 함유",
+  "servingSize": {
+   "value": 25.0,
+   "unit": "g",
+   "basis": "total"
+  },
+  "photos": [
+   "20261109_125844.jpg",
+   "20261109_125848.jpg"
+  ],
+  "missing": [],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809765670273",
+  "name": "룩트 황치즈 소보로 그래놀라 (Lukt Yellow Cheese Soboro Granola)",
+  "maker": "아티튜드, 서울특별시 강남구 테헤란로7길 22, 2관 9층 920호",
+  "category": "기타가공품",
+  "source": "photo_ai",
+  "barcode": "8809765670273",
+  "frontClaims": [],
+  "per100g": {
+   "carb": 68.0,
+   "sugar": 2.0,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [
+   [
+    "유기농 우리밀 밀가루(국산)29.2 %",
+    "비정제사탕수수",
+    "양공버터16.7 %",
+    "버터",
+    "아몬드",
+    "초콜릿청크",
+    "무염 코코아버터",
+    "코코아분말",
+    "레시틴",
+    "우유",
+    "식염 … 밀",
+    "우유",
+    "대두",
+    "땅콩 함유"
+   ],
+   [
+    "유기농 우리밀 밀가루(국산)29.2 %",
+    "비정제사탕수수",
+    "양공버터16.7 %",
+    "버터",
+    "유크림 100 %",
+    "아몬드",
+    "초콜릿청크",
+    "설탕",
+    "코코아메스 …",
+    "무염 코코아버터",
+    "코코아분말",
+    "레시틴",
+    "대두",
+    "우유",
+    "식염 … 밀",
+    "우유",
+    "대두",
+    "땅콩 함유"
+   ]
+  ],
+  "ingredientsText": "유기농 우리밀 밀가루(국산)29.2 %, 비정제사탕수수, 양공버터16.7 %, 버터(유크림 100 %, 뉴질랜드산), 아몬드, 초콜릿청크(설탕, 코코아메스 …), 무염 코코아버터, 코코아분말, 레시틴(대두), 우유, 식염 … 밀, 우유, 대두, 땅콩 함유",
+  "servingSize": {
+   "value": 25.0,
+   "unit": "g",
+   "basis": "total"
+  },
+  "photos": [
+   "20261109_125849.jpg",
+   "20261109_125853.jpg"
+  ],
+  "missing": [],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809765671324",
+  "name": "Lukt Granola Cluster / 룩트 그래놀라 클러스터",
+  "maker": "(주)해오름식품 (제조원) / (주)아티투드 (판매원)",
+  "category": "곡류가공품",
+  "source": "photo_ai",
+  "barcode": "8809765671324",
+  "frontClaims": [
+   "Oven Baked Clusters of Oats",
+   "Granola with Almond & Seed"
+  ],
+  "per100g": {
+   "carb": 48.0,
+   "sugar": 4.0,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [
+   [
+    "유기농귀리(캐나다산) 16.4%",
+    "아몬드분말",
+    "식물성경화유지",
+    "다-토코페롤",
+    "유기농우리밀통밀가루(국산) 8.4%",
+    "카제인나트륨",
+    "무염버터",
+    "슈가파우더",
+    "코코낫오일",
+    "프락토...",
+    "밀",
+    "우유",
+    "대두 ... 해바라기씨앗 (해바라기씨앗 100%) ...",
+    "아몬드분태",
+    "식염 ..."
+   ],
+   [
+    "유기농귀리(캐나다산) 16.4%",
+    "아몬드분말",
+    "식물성경화유지",
+    "아자경화유 ...",
+    "다-토코페롤",
+    "혼합형",
+    "유기농우리밀통밀가루(국산) 8.4%",
+    "카제인나트륨",
+    "호주산/원유 ...",
+    "무염버터",
+    "슈가파우더",
+    "원당 ...",
+    "코코낫오일",
+    "프락토...",
+    "밀",
+    "우유",
+    "대두 ... 해바라기씨앗 (해바라기씨앗 100%) ...",
+    "아몬드분태",
+    "식염 ...",
+    "사진이 흐려 일부 글자는 판독 불가"
+   ]
+  ],
+  "ingredientsText": "유기농귀리(캐나다산) 16.4%, 아몬드분말(미국산), 식물성경화유지(아자경화유 ...), 다-토코페롤(혼합형), 유기농우리밀통밀가루(국산) 8.4%, 카제인나트륨(호주산/원유 ...), 무염버터(우크라이나 ...), 슈가파우더(원당 ...), 코코낫오일, 프락토... , 밀, 우유, 대두 ... 해바라기씨앗 (해바라기씨앗 100%) ..., 아몬드분태, 식염 ... (사진이 흐려 일부 글자는 판독 불가)",
+  "servingSize": {
+   "value": 25.0,
+   "unit": "g",
+   "basis": "total"
+  },
+  "photos": [
+   "20261109_125856.jpg",
+   "20261109_125859.jpg"
+  ],
+  "missing": [],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809765670037",
+  "name": "",
+  "maker": "(주)해오름식품 (제조원 표기), (주)아티투드 (판매원 표기)",
+  "category": "기타가공품",
+  "source": "photo_ai",
+  "barcode": "8809765670037",
+  "frontClaims": [],
+  "per100g": {
+   "carb": 56.0,
+   "sugar": 8.0,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [
+   [
+    "유기농귀리(캐나다산) 33.6 %",
+    "메이플시럽",
+    "아몬드(미국산) 20.2 %",
+    "코코넛오일",
+    "해바라기씨앗 9 %",
+    "비정제사탕수수",
+    "소금"
+   ],
+   [
+    "유기농귀리(캐나다산) 33.6 %",
+    "메이플시럽",
+    "아몬드(미국산) 20.2 %",
+    "코코넛오일",
+    "해바라기씨앗 9 %",
+    "비정제사탕수수",
+    "소금"
+   ]
+  ],
+  "ingredientsText": "유기농귀리(캐나다산) 33.6 %, 메이플시럽(캐나다산), 아몬드(미국산) 20.2 %, 코코넛오일, 해바라기씨앗 9 %, 비정제사탕수수, 소금",
+  "servingSize": {
+   "value": 25.0,
+   "unit": "g",
+   "basis": "total"
+  },
+  "photos": [
+   "20261109_125901.jpg",
+   "20261109_125906.jpg"
+  ],
+  "missing": [],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809355180762",
+  "name": "",
+  "maker": "제조원: 농업회사법인(주)두리두리 / 유통전문판매원: 농업회사법인(주)오셈 (뒷면 표기 기준, 일부 판독 불가)",
+  "category": "기타가공품",
+  "source": "photo_ai",
+  "barcode": "8809355180762",
+  "frontClaims": [],
+  "per100g": {
+   "carb": 52.5,
+   "sugar": 2.5,
+   "fiber": 5.0,
+   "sweeteners": {}
+  },
+  "ingredients": [
+   [
+    "분리대두단백",
+    "동결건조바밤단호박분말",
+    "식물성크림",
+    "덱스트린",
+    "우유",
+    "가공유",
+    "혼합곡물플러스",
+    "…판독 불가…",
+    "소처리스테비아",
+    "정제소금"
+   ],
+   [
+    "분리대두단백",
+    "싱가포르산",
+    "동결건조바밤단호박분말",
+    "…판독 불가…",
+    "식물성크림",
+    "…판독 불가…",
+    "덱스트린",
+    "우유",
+    "가공유",
+    "…판독 불가…",
+    "혼합곡물플러스",
+    "현미",
+    "보리",
+    "찰현미 등 판독 불가",
+    "…판독 불가…",
+    "차볼",
+    "호일분말",
+    "쌀가루",
+    "통밀가루",
+    "볶음이 등 판독 불가",
+    "소처리스테비아",
+    "감미료",
+    "정제소금"
+   ]
+  ],
+  "ingredientsText": "분리대두단백(싱가포르산), 동결건조바밤단호박분말(…판독 불가…), 식물성크림(…판독 불가…), 덱스트린, 우유(국산), 가공유(…판독 불가…), 혼합곡물플러스(현미, 보리, 찰현미 등 판독 불가), …판독 불가…(차볼, 호일분말, 쌀가루, 통밀가루, 볶음이 등 판독 불가), 소처리스테비아(감미료), 정제소금",
+  "servingSize": {
+   "value": 40.0,
+   "unit": "g",
+   "basis": "total"
+  },
+  "photos": [
+   "20261109_125913.jpg",
+   "20261109_125918.jpg",
+   "20261109_125923.jpg"
+  ],
+  "missing": [],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809765671553",
+  "name": "룩트 단백질쉐이크 볶음콩소보로",
+  "maker": "BSA아트루드 / 서울특별시 강남구 테헤란로7길 22, 2관 9층 920호",
+  "category": "체중조절용 조제식품",
+  "source": "photo_ai",
+  "barcode": "8809765671553",
+  "frontClaims": [
+   "체중조절용 조제식품",
+   "단백질 20.7g"
+  ],
+  "per100g": {
+   "carb": 42.44,
+   "sugar": 13.56,
+   "fiber": 11.11,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": 45.0,
+   "unit": "g",
+   "basis": "total"
+  },
+  "photos": [
+   "20261109_125926.jpg",
+   "20261109_125929.jpg"
+  ],
+  "missing": [
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809765671539",
+  "name": "룩트 단백질쉐이크 시나몬피칸",
+  "maker": "",
+  "category": "체중조절용 조제식품",
+  "source": "photo_ai",
+  "barcode": "8809765671539",
+  "frontClaims": [
+   "체중조절용 조제식품",
+   "룩트 그래놀라 맛, 부드러운 쉐이크로!",
+   "단백질 16.6g"
+  ],
+  "per100g": {
+   "carb": 35.78,
+   "sugar": 14.0,
+   "fiber": 4.44,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": 45.0,
+   "unit": "g",
+   "basis": "total"
+  },
+  "photos": [
+   "20261109_125932.jpg",
+   "20261109_125935.jpg"
+  ],
+  "missing": [
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809765671546",
+  "name": "플라이밀 리얼초코",
+  "maker": "아이티드트 (서울특별시 강남구 테헤란로7길 22, 2관 9층 920호 / 고객상담 02-6207-2083)",
+  "category": "단백질쉐이크",
+  "source": "photo_ai",
+  "barcode": "8809765671546",
+  "frontClaims": [
+   "23g 단백질",
+   "PROTEIN SHAKE",
+   "고단백 쉐이크",
+   "159Kcal",
+   "1.2g 당류",
+   "3.9g 식이섬유",
+   "FLIMEAL REAL CHOCOLATE"
+  ],
+  "per100g": {
+   "carb": 43.33,
+   "sugar": 11.11,
+   "fiber": 7.11,
+   "sweeteners": {}
+  },
+  "ingredients": [
+   [
+    "혼합탈지분유(탈지분유: 말레이시아·뉴질랜드) … 코코아분말 … 우유",
+    "대두",
+    "밀",
+    "쇠고기 함유"
+   ],
+   [
+    "혼합탈지분유(탈지분유: 말레이시아·뉴질랜드) … 코코아분말 … 우유",
+    "대두",
+    "밀",
+    "쇠고기 함유",
+    "사진에서 일부 글자가 가려지거나 흐려 전체 원문은 확인 불가"
+   ]
+  ],
+  "ingredientsText": "혼합탈지분유(탈지분유: 말레이시아·뉴질랜드) … 코코아분말 … 우유, 대두, 밀, 쇠고기 함유 (사진에서 일부 글자가 가려지거나 흐려 전체 원문은 확인 불가)",
+  "servingSize": {
+   "value": 45.0,
+   "unit": "g",
+   "basis": "total"
+  },
+  "photos": [
+   "20261109_125937.jpg",
+   "20261109_125939.jpg"
+  ],
+  "missing": [],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809859772142",
+  "name": "플라이밀 피스타치오",
+  "maker": "",
+  "category": "피스타치오 고단백 쉐이크",
+  "source": "photo_ai",
+  "barcode": "8809859772142",
+  "frontClaims": [
+   "20g 단백질",
+   "PROTEIN SHAKE",
+   "고단백 쉐이크"
+  ],
+  "per100g": {
+   "carb": null,
+   "sugar": 5.33,
+   "fiber": 5.33,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": 45.0,
+   "unit": "g",
+   "basis": "serving"
+  },
+  "photos": [
+   "20261109_125942.jpg",
+   "20261109_125949.jpg"
+  ],
+  "missing": [
+   "carb",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809859771701",
+  "name": "플라이밀 브라운 (FLIMEAL BROWN 17GRAINS)",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8809859771701",
+  "frontClaims": [
+   "고단백",
+   "17곡미숫가루",
+   "20g 단백질",
+   "PROTEIN SHAKE"
+  ],
+  "per100g": {
+   "carb": null,
+   "sugar": 2.22,
+   "fiber": 5.78,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": 45.0,
+   "unit": "g",
+   "basis": "serving"
+  },
+  "photos": [
+   "20261109_125953.jpg",
+   "20261109_125956.jpg"
+  ],
+  "missing": [
+   "carb",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809186015554",
+  "name": "플라이밀 콘시리얼",
+  "maker": "제조원: (주)스포츠바이오텍 / 유통전문판매원: (주)에프앤엘코퍼레이션",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8809186015554",
+  "frontClaims": [
+   "20g 단백질",
+   "고단백 쉐이크",
+   "PROTEIN SHAKE"
+  ],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": null,
+   "unit": "g",
+   "basis": null
+  },
+  "photos": [
+   "20261109_125959.jpg",
+   "20261109_130002.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809859770759",
+  "name": "로슈얼 (Delispoon, Low[Su-ar])",
+  "maker": "스포츠바이오텍",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8809859770759",
+  "frontClaims": [
+   "17g High protein",
+   "0.8g Low sugar"
+  ],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": 35.0,
+   "unit": "g",
+   "basis": null
+  },
+  "photos": [
+   "20261109_130009.jpg",
+   "20261109_130013.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809247241458",
+  "name": "Benope 초콜릿시리얼",
+  "maker": "",
+  "category": "단백질쉐이크",
+  "source": "photo_ai",
+  "barcode": "8809247241458",
+  "frontClaims": [
+   "단백질 20g",
+   "당류 1.3g",
+   "진짜 시리얼 듬뿍!"
+  ],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": 40.0,
+   "unit": "g",
+   "basis": null
+  },
+  "photos": [
+   "20261109_130017.jpg",
+   "20261109_130021.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809786771010",
+  "name": "Benope 버터멜로우쿠키 (하단 표기: 베노프 단백질쉐이크 버터멜로우쿠키)",
+  "maker": "제조원: 주식회사 나래푸드텍 / 경기도; 유통전문판매원: (주)베노프하우스",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8809786771010",
+  "frontClaims": [
+   "PROTEIN 20g",
+   "SUGAR 2.3g",
+   "버터쿠키 크럼블 팡!"
+  ],
+  "per100g": {
+   "carb": 36.25,
+   "sugar": 3.25,
+   "fiber": null,
+   "sweeteners": {
+    "allulose": 20.5
+   }
+  },
+  "ingredients": [
+   [
+    "사진에 일부만 보임",
+    "알룰로... 분리대두단백... 분말(네덜란드산)... (설탕, 옥...)... 기타... 두류가공품(분리...)... (스페인)... 대두레시틴",
+    "제인산... 탈염유청... 아라비아검",
+    "기타... 정제수",
+    "합성향료",
+    "수크랄로스(감미료)... 대두",
+    "우유",
+    "밀 함유"
+   ],
+   [
+    "사진에 일부만 보임",
+    "잘림): (중국산",
+    "알룰로... 분리대두단백... 분말(네덜란드산)... (설탕, 옥...)... 기타... 두류가공품(분리...)... (스페인)... 대두레시틴",
+    "제인산... 탈염유청... 아라비아검",
+    "기타... 정제수",
+    "합성향료",
+    "수크랄로스(감미료)... 대두",
+    "우유",
+    "밀 함유"
+   ]
+  ],
+  "ingredientsText": "사진에 일부만 보임(잘림): (중국산), 알룰로... 분리대두단백... 분말(네덜란드산)... (설탕, 옥...)... 기타... 두류가공품(분리...)... (스페인)... 대두레시틴, 제인산... 탈염유청... 아라비아검, 기타... 정제수, 합성향료, 수크랄로스(감미료)... 대두, 우유, 밀 함유",
+  "servingSize": {
+   "value": 40.0,
+   "unit": "g",
+   "basis": "total"
+  },
+  "photos": [
+   "20261109_130025.jpg",
+   "20261109_130029.jpg"
+  ],
+  "missing": [],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809786771553",
+  "name": "마이프로틴 쉐이크 요거트 스트로베리",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8809786771553",
+  "frontClaims": [
+   "SPORTS NUTRITION BRAND",
+   "EUROPE NO.1",
+   "단백질 20g",
+   "당류 2g",
+   "식이섬유 4.8g"
+  ],
+  "per100g": {
+   "carb": null,
+   "sugar": 4.44,
+   "fiber": 10.67,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": 45.0,
+   "unit": "g",
+   "basis": "total"
+  },
+  "photos": [
+   "20261109_130031.jpg",
+   "20261109_130037.jpg"
+  ],
+  "missing": [
+   "carb",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809540092764",
+  "name": "Whey Protein Shake 마이프로틴 쉐이크 너티 그레인",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8809540092764",
+  "frontClaims": [
+   "단백질 20g",
+   "당류 1.1g",
+   "식이섬유 5.7g",
+   "EUROPE NO.1 SPORTS NUTRITION BRAND"
+  ],
+  "per100g": {
+   "carb": null,
+   "sugar": 2.44,
+   "fiber": 12.67,
+   "sweeteners": {}
+  },
+  "ingredients": [
+   [
+    "(일부만 보임, 앞부분 잘림) 유청단백(농축유청단백, ...)...분리대두단백(분리대두단백, 레시...)...난소화성말토덱스트린",
+    "콜라겐 펩타이드",
+    "딸기다이스",
+    "딸기과즙분말",
+    "밀크단백질크리스프",
+    "오트크런치",
+    "전...그릭요거트H",
+    "비트레드",
+    "구연산",
+    "감...우유",
+    "대두",
+    "밀",
+    "쇠고기 함유"
+   ],
+   [
+    "(일부만 보임, 앞부분 잘림) 유청단백(농축유청단백, ...)...분리대두단백(분리대두단백, 레시...)...난소화성말토덱스트린",
+    "콜라겐 펩타이드",
+    "딸기다이스",
+    "딸기과즙분말",
+    "밀크단백질크리스프",
+    "오트크런치",
+    "전...그릭요거트H",
+    "버터",
+    "비트레드",
+    "구연산",
+    "감...우유",
+    "대두",
+    "밀",
+    "쇠고기 함유"
+   ]
+  ],
+  "ingredientsText": "(일부만 보임, 앞부분 잘림) 유청단백(농축유청단백, ...)...분리대두단백(분리대두단백, 레시...)...난소화성말토덱스트린, 콜라겐 펩타이드, 딸기다이스(중국산), 딸기과즙분말, 밀크단백질크리스프(미국산), 오트크런치, 전...그릭요거트H(버터: 미국산), 비트레드, 구연산, 감...우유, 대두, 밀, 쇠고기 함유",
+  "servingSize": {
+   "value": 45.0,
+   "unit": "g",
+   "basis": "serving"
+  },
+  "photos": [
+   "20261109_130039.jpg",
+   "20261109_130043.jpg"
+  ],
+  "missing": [
+   "carb"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809540092757",
+  "name": "MYPROTEIN Whey Protein Shake 마이프로틴 쉐이크 코코 초코",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8809540092757",
+  "frontClaims": [
+   "EUROPE NO.1",
+   "SPORTS NUTRITION BRAND",
+   "단백질 21g",
+   "당류 1.5g",
+   "식이섬유 6.4g"
+  ],
+  "per100g": {
+   "carb": 37.78,
+   "sugar": 3.33,
+   "fiber": 14.22,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": 45.0,
+   "unit": "g",
+   "basis": "serving"
+  },
+  "photos": [
+   "20261109_130046.jpg",
+   "20261109_130049.jpg",
+   "20261109_130051.jpg",
+   "20261109_130057.jpg",
+   "20261109_130101.jpg",
+   "20261109_130104.jpg"
+  ],
+  "missing": [
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8800261389300",
+  "name": "",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8800261389300",
+  "frontClaims": [],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": null,
+   "unit": "g",
+   "basis": null
+  },
+  "photos": [
+   "20261109_130106.jpg",
+   "20261109_130110.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8800378230274",
+  "name": "",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8800378230274",
+  "frontClaims": [],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": null,
+   "unit": "g",
+   "basis": null
+  },
+  "photos": [
+   "20261109_130112.jpg",
+   "20261109_130116.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8800261389287",
+  "name": "",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8800261389287",
+  "frontClaims": [],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": null,
+   "unit": "g",
+   "basis": null
+  },
+  "photos": [
+   "20261109_130118.jpg",
+   "20261109_130126.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8800271130268",
+  "name": "헤이 씨리! 츄러스",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8800271130268",
+  "frontClaims": [
+   "ZERO SUGAR PROTEIN CEREAL",
+   "ZEROSPOON",
+   "PROTEIN 17g",
+   "0 SUGAR",
+   "총단백질 85g",
+   "색소·설탕 ZERO",
+   "말티톨 FREE"
+  ],
+  "per100g": {
+   "carb": 45.0,
+   "sugar": 0.0,
+   "fiber": 5.0,
+   "sweeteners": {
+    "sugar_alcohol": 9.75,
+    "allulose": 4.0
+   }
+  },
+  "ingredients": [
+   [
+    "(사진에서 잘려 전체 확인 불가) ...(분리대두단백, 카사바전분, 탄산칼슘, ... 현미(국산), 귀리후레이크 ..., 코코넛분말(인도네시아산), ... 호박씨, 분리대두단백분말, 호두분태, 코코넛 ..., 비타민C, 천일염, 나한과추출분말, ... 우유, 호두 함유"
+   ],
+   [
+    "(사진에서 잘려 전체 확인 불가) ...(분리대두단백, 카사바전분, 탄산칼슘, ... 현미(국산), 귀리후레이크 ..., 코코넛분말(인도네시아산), ... 호박씨, 분리대두단백분말, 호두분태, 코코넛 ..., 비타민C, 천일염, 나한과추출분말, ... 우유, 호두 함유"
+   ]
+  ],
+  "ingredientsText": "(사진에서 잘려 전체 확인 불가) ...(분리대두단백, 카사바전분, 탄산칼슘, ... 현미(국산), 귀리후레이크 ..., 코코넛분말(인도네시아산), ... 호박씨, 분리대두단백분말, 호두분태, 코코넛 ..., 비타민C, 천일염, 나한과추출분말, ... 우유, 호두 함유",
+  "servingSize": {
+   "value": 40.0,
+   "unit": "g",
+   "basis": "serving"
+  },
+  "photos": [
+   "20261109_130131.jpg",
+   "20261109_130142.jpg"
+  ],
+  "missing": [],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8800271130251",
+  "name": "얌얌케이크 카카오",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8800271130251",
+  "frontClaims": [
+   "5g 단백질",
+   "0.2g 당",
+   "코코아분말 6%, 코코아버터 3%, 코코아매스 8% 함유"
+  ],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": 25.0,
+   "unit": "g",
+   "basis": null
+  },
+  "photos": [
+   "20261109_130145.jpg",
+   "20261109_130204.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809458230791",
+  "name": "얌얌케이크 (YAMYAM CAKE)",
+  "maker": "제조원: (주)씨엔미 / 경기도 여주시 흥천면 은골길46, 판매원: (주)모후 / 서울시 강남구 역삼로 512 인테크빌딩 5층 733호",
+  "category": "초콜릿가공품",
+  "source": "photo_ai",
+  "barcode": "8809458230791",
+  "frontClaims": [],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [
+   [
+    "버터",
+    "다크초콜릿",
+    "..."
+   ],
+   [
+    "버터",
+    "다크초콜릿",
+    "코코아매스",
+    "알룰로스",
+    "코코아분말",
+    "코코아버터",
+    "싱가포르산",
+    "전지분유",
+    "...",
+    "이하 사진에서 잘려 보이지 않음"
+   ]
+  ],
+  "ingredientsText": "버터(뉴질랜드산), 다크초콜릿(코코아매스(스페인산), 알룰로스, 코코아분말(말레이시아산), 코코아버터(싱가포르산), 전지분유(외국산: 미국, 뉴질랜드, 호주)), ... (이하 사진에서 잘려 보이지 않음)",
+  "servingSize": {
+   "value": 25.0,
+   "unit": "g",
+   "basis": "serving"
+  },
+  "photos": [
+   "20261109_130211.jpg",
+   "20261109_130218.jpg",
+   "20261109_130227.jpg",
+   "20261109_130235.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809458230814",
+  "name": "",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8809458230814",
+  "frontClaims": [],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": null,
+   "unit": "g",
+   "basis": null
+  },
+  "photos": [
+   "20261109_130240.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809634874610",
+  "name": "마이노멀 저당 과일푸딩 감귤",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8809634874610",
+  "frontClaims": [
+   "저당",
+   "KETO LIFESTYLE",
+   "당류 2g (*100g당)"
+  ],
+  "per100g": {
+   "carb": 8.65,
+   "sugar": 2.16,
+   "fiber": 2.7,
+   "sweeteners": {
+    "allulose": 2.7
+   }
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": 185.0,
+   "unit": "g",
+   "basis": "serving"
+  },
+  "photos": [
+   "20261109_130248.jpg",
+   "20261109_130301.jpg"
+  ],
+  "missing": [
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809634870292",
+  "name": "OH NUTTY Peanut Butter Original 오넛티 땅콩버터 오리지널 100%",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8809634870292",
+  "frontClaims": [
+   "We're all 100% NUTS",
+   "오리지널 100%",
+   "땅콩 100%"
+  ],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": 230.0,
+   "unit": "g",
+   "basis": "total"
+  },
+  "photos": [
+   "20261109_130307.jpg",
+   "20261109_130317.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809848610141",
+  "name": "",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8809848610141",
+  "frontClaims": [],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": null,
+   "unit": "g",
+   "basis": null
+  },
+  "photos": [
+   "20261109_130323.jpg",
+   "20261109_130333.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809634870001",
+  "name": "",
+  "maker": "(주)마이노멀컴퍼니 (판매원), (주)삼양패키징 광혜원공장 (제조원)",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8809634870001",
+  "frontClaims": [],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [
+   [
+    "정제수",
+    "마이노멀버터블렌드 17.5%",
+    "코코넛오일",
+    "필리핀산…",
+    "MCT오일",
+    "카제인나트륨",
+    "탄산…",
+    "대두",
+    "땅콩",
+    "메밀",
+    "난류",
+    "드산…",
+    "추출액"
+   ],
+   [
+    "정제수",
+    "마이노멀버터블렌드 17.5%",
+    "…",
+    "코코넛오일",
+    "필리핀산…",
+    "MCT오일",
+    "코코넛오일 …",
+    "카제인나트륨",
+    "탄산…",
+    "대두",
+    "땅콩",
+    "메밀",
+    "난류",
+    "드산…",
+    "추출액",
+    "브라질산) … (사진에서 잘림"
+   ]
+  ],
+  "ingredientsText": "정제수, 마이노멀버터블렌드 17.5%(…), 코코넛오일, 필리핀산…, MCT오일(코코넛오일 …), 카제인나트륨, 탄산…, 대두, 땅콩, 메밀, 난류, 드산…, 추출액(브라질산) … (사진에서 잘림)",
+  "servingSize": {
+   "value": null,
+   "unit": "g",
+   "basis": null
+  },
+  "photos": [
+   "20261109_130338.jpg",
+   "20261109_130348.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809634871138",
+  "name": "Benope 단백질바 청키초콜릿",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8809634871138",
+  "frontClaims": [
+   "단백질바",
+   "Rich in Chocolate",
+   "리얼초콜릿",
+   "깊고 진한 달콤함"
+  ],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": null,
+   "unit": "g",
+   "basis": null
+  },
+  "photos": [
+   "20261109_130353.jpg",
+   "20261109_130433.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809786771096",
+  "name": "Lalasweet 딥크림 웨하스 헤이즐넛 초코바",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8809786771096",
+  "frontClaims": [
+   "저당",
+   "Low Sugar",
+   "묵직한 4중 크림"
+  ],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": 28.0,
+   "unit": "g",
+   "basis": "serving"
+  },
+  "photos": [
+   "20261109_130440.jpg",
+   "20261109_130448.jpg",
+   "20261109_130451.jpg",
+   "20261109_130457.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8804433103893",
+  "name": "Benope 단백질바 트러플피넛버터초콜릿",
+  "maker": "",
+  "category": "단백질바",
+  "source": "photo_ai",
+  "barcode": "8804433103893",
+  "frontClaims": [
+   "단백질 15g",
+   "블랙트러플"
+  ],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": 50.0,
+   "unit": "g",
+   "basis": "serving"
+  },
+  "photos": [
+   "20261109_130502.jpg",
+   "20261109_130508.jpg",
+   "20261109_130510.jpg",
+   "20261109_130514.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809786770457",
+  "name": "Benope 소프트바 군고구마",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8809786770457",
+  "frontClaims": [
+   "Protein 20g"
+  ],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": 60.0,
+   "unit": "g",
+   "basis": "serving"
+  },
+  "photos": [
+   "20261109_130524.jpg",
+   "20261109_130528.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809786770501",
+  "name": "Benope 소프트바 쿠키앤크림",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8809786770501",
+  "frontClaims": [
+   "Protein 20g"
+  ],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": 60.0,
+   "unit": "g",
+   "basis": null
+  },
+  "photos": [
+   "20261109_130542.jpg",
+   "20261109_130552.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809786770518",
+  "name": "Benope 소프트바 그래놀라",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8809786770518",
+  "frontClaims": [
+   "protein 20g"
+  ],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": 60.0,
+   "unit": "g",
+   "basis": "serving"
+  },
+  "photos": [
+   "20261109_130607.jpg",
+   "20261109_130615.jpg",
+   "20261109_130623.jpg",
+   "20261109_130632.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809786770440",
+  "name": "Benope 소프트바 초콜릿카라멜",
+  "maker": "",
+  "category": "소프트바",
+  "source": "photo_ai",
+  "barcode": "8809786770440",
+  "frontClaims": [
+   "Protein 20g"
+  ],
+  "per100g": {
+   "carb": 46.67,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {
+    "allulose": 8.67
+   }
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": 60.0,
+   "unit": "g",
+   "basis": "total"
+  },
+  "photos": [
+   "20261109_130646.jpg",
+   "20261109_130659.jpg",
+   "20261109_130704.jpg",
+   "20261109_130712.jpg",
+   "20261109_130721.jpg",
+   "20261109_130730.jpg",
+   "20261109_130740.jpg"
+  ],
+  "missing": [
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809599361804",
+  "name": "라라스윗 저당 듬뿍바 더블베리",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8809599361804",
+  "frontClaims": [
+   "저당",
+   "LOW SUGAR",
+   "당이 낮아요",
+   "블루베리 13% 함유"
+  ],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": 70.0,
+   "unit": "g",
+   "basis": "serving"
+  },
+  "photos": [
+   "20261109_130801.jpg",
+   "20261109_130802.jpg",
+   "20261109_130805.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809599361750",
+  "name": "Lala Sweet",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8809599361750",
+  "frontClaims": [
+   "Low Sugar",
+   "저당"
+  ],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": null,
+   "unit": "g",
+   "basis": null
+  },
+  "photos": [
+   "20261109_130807.jpg",
+   "20261109_130810.jpg",
+   "20261109_130812.jpg",
+   "20261109_130816.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809599361637",
+  "name": "Zaia sweet",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8809599361637",
+  "frontClaims": [
+   "저당",
+   "LOW SUGAR"
+  ],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": null,
+   "unit": "g",
+   "basis": null
+  },
+  "photos": [
+   "20261109_130818.jpg",
+   "20261109_130823.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809599361217",
+  "name": "Lalasweet 저당 애플망고 생요거트바",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8809599361217",
+  "frontClaims": [
+   "저당",
+   "16% 생요거트",
+   "진짜 생요거트",
+   "5% 애플망고 과육"
+  ],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": null,
+   "unit": "g",
+   "basis": null
+  },
+  "photos": [
+   "20261109_130830.jpg",
+   "20261109_130836.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809599361606",
+  "name": "랄라스윗",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8809599361606",
+  "frontClaims": [
+   "저당",
+   "LOW SUGAR"
+  ],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": 70.0,
+   "unit": "g",
+   "basis": "serving"
+  },
+  "photos": [
+   "20261109_130839.jpg",
+   "20261109_130846.jpg",
+   "20261109_130850.jpg",
+   "20261109_130909.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8801062861729",
+  "name": "ZERO 말차&크림 모나카",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8801062861729",
+  "frontClaims": [
+   "ZERO",
+   "제로"
+  ],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": null,
+   "unit": "g",
+   "basis": null
+  },
+  "photos": [
+   "20261109_130912.jpg",
+   "20261109_130916.jpg",
+   "20261109_130919.jpg",
+   "20261109_130943.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8801094212728",
+  "name": "토레타 제로",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8801094212728",
+  "frontClaims": [
+   "Zero",
+   "제로칼로리"
+  ],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": 500.0,
+   "unit": "g",
+   "basis": null
+  },
+  "photos": [
+   "20261109_130950.jpg",
+   "20261109_130956.jpg",
+   "20261109_131000.jpg",
+   "20261109_131004.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809799270203",
+  "name": "APPLE CIDER VINEGAR",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8809799270203",
+  "frontClaims": [
+   "ORIGINAL"
+  ],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": 500.0,
+   "unit": "g",
+   "basis": null
+  },
+  "photos": [
+   "20261109_131012.jpg",
+   "20261109_131020.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809495078851",
+  "name": "",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8809495078851",
+  "frontClaims": [],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": null,
+   "unit": "g",
+   "basis": null
+  },
+  "photos": [
+   "20261109_131022.jpg",
+   "20261109_131038.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8801104948128",
+  "name": "설탕이 들어가지 않은 초코우유",
+  "maker": "빙그레",
+  "category": "가공유",
+  "source": "photo_ai",
+  "barcode": "8801104948128",
+  "frontClaims": [
+   "NO ADDED SUGAR",
+   "설탕이 들어가지 않은"
+  ],
+  "per100g": {
+   "carb": 5.26,
+   "sugar": 4.68,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": 190.0,
+   "unit": "g",
+   "basis": "total"
+  },
+  "photos": [
+   "20261109_131041.jpg",
+   "20261109_131044.jpg"
+  ],
+  "missing": [
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8801104948142",
+  "name": "",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8801104948142",
+  "frontClaims": [],
+  "per100g": {
+   "carb": 5.53,
+   "sugar": 3.95,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": 190.0,
+   "unit": "g",
+   "basis": "total"
+  },
+  "photos": [
+   "20261109_131047.jpg",
+   "20261109_131051.jpg"
+  ],
+  "missing": [
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8801121044155",
+  "name": "피크닉 사과 제로",
+  "maker": "aeil (로고 일부만 보임)",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8801121044155",
+  "frontClaims": [
+   "ZERO Sugar",
+   "사과 제로"
+  ],
+  "per100g": {
+   "carb": 5.79,
+   "sugar": 0.0,
+   "fiber": null,
+   "sweeteners": {
+    "sugar_alcohol": 5.16
+   }
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": 200.0,
+   "unit": "g",
+   "basis": "total"
+  },
+  "photos": [
+   "20261109_131054.jpg",
+   "20261109_131104.jpg"
+  ],
+  "missing": [
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8801121044865",
+  "name": "",
+  "maker": "매일유업(주)",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8801121044865",
+  "frontClaims": [
+   "MINUS SOLUTION",
+   "ZERO SUGAR"
+  ],
+  "per100g": {
+   "carb": 3.5,
+   "sugar": 0.25,
+   "fiber": null,
+   "sweeteners": {
+    "sugar_alcohol": 2.7
+   }
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": 200.0,
+   "unit": "g",
+   "basis": "total"
+  },
+  "photos": [
+   "20261109_131108.jpg",
+   "20261109_131130.jpg"
+  ],
+  "missing": [
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809897981971",
+  "name": "얼큰김치 쌀국수",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8809897981971",
+  "frontClaims": [
+   "Gluten-free",
+   "국산쌀",
+   "165 Kcal",
+   "한끼든든"
+  ],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": null,
+   "unit": "g",
+   "basis": null
+  },
+  "photos": [
+   "20261109_131133.jpg",
+   "20261109_131242.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809887320254",
+  "name": "잔치 멸치 쌀국수",
+  "maker": "네이처빌",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8809887320254",
+  "frontClaims": [
+   "글루텐프리",
+   "국산쌀"
+  ],
+  "per100g": {
+   "carb": null,
+   "sugar": 2.08,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": 48.0,
+   "unit": "g",
+   "basis": "total"
+  },
+  "photos": [
+   "20261109_131244.jpg",
+   "20261109_131248.jpg",
+   "20261109_131250.jpg",
+   "20261109_131255.jpg"
+  ],
+  "missing": [
+   "carb",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8809887320230",
+  "name": "",
+  "maker": "네이처빌 (뒷면 텍스트 'naturevil.com', '네이처빌 mall' 기준)",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8809887320230",
+  "frontClaims": [],
+  "per100g": {
+   "carb": 72.92,
+   "sugar": 2.08,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": 48.0,
+   "unit": "g",
+   "basis": "total"
+  },
+  "photos": [
+   "20261109_131257.jpg",
+   "20261109_131302.jpg"
+  ],
+  "missing": [
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8801043012577",
+  "name": "누들 짜파 (앞면 미확인, 사진에 보이는 글자 기준)",
+  "maker": "농심",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8801043012577",
+  "frontClaims": [],
+  "per100g": {
+   "carb": 65.06,
+   "sugar": null,
+   "fiber": 3.61,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": 41.5,
+   "unit": "g",
+   "basis": "total"
+  },
+  "photos": [
+   "20261109_131305.jpg",
+   "20261109_131310.jpg"
+  ],
+  "missing": [
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8801045584669",
+  "name": "컵누들 불닭맛",
+  "maker": "오뚜기",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8801045584669",
+  "frontClaims": [
+   "저당",
+   "130kcal",
+   "콜라겐 100mg!",
+   "탱글탱글 쫄깃당면"
+  ],
+  "per100g": {
+   "carb": 77.14,
+   "sugar": 5.71,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": 35.0,
+   "unit": "g",
+   "basis": "total"
+  },
+  "photos": [
+   "20261109_131313.jpg",
+   "20261109_131318.jpg"
+  ],
+  "missing": [
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8801045779959",
+  "name": "",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8801045779959",
+  "frontClaims": [],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": null,
+   "unit": "g",
+   "basis": null
+  },
+  "photos": [
+   "20261109_131326.jpg",
+   "20261109_131334.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8801045735917",
+  "name": "가뿐한끼 닭가슴살 짜장",
+  "maker": "주식회사 오뚜기 (충북 음성군 대풍산단도 128)",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8801045735917",
+  "frontClaims": [],
+  "per100g": {
+   "carb": 10.77,
+   "sugar": 5.38,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [
+   [
+    "양파",
+    "닭고기",
+    "양파…"
+   ],
+   [
+    "양파",
+    "닭고기",
+    "양파…",
+    "이하 사진에서 판독 불가"
+   ]
+  ],
+  "ingredientsText": "양파(국산), 닭고기(국산), 양파… (이하 사진에서 판독 불가)",
+  "servingSize": {
+   "value": 130.0,
+   "unit": "g",
+   "basis": "total"
+  },
+  "photos": [
+   "20261109_131337.jpg",
+   "20261109_131342.jpg"
+  ],
+  "missing": [],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8801045105208",
+  "name": "덴마크 초코초코우유",
+  "maker": "",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8801045105208",
+  "frontClaims": [
+   "라이트&저지방",
+   "당류 저감 20%",
+   "식약처 평균값 대비 당류 20% 라이트"
+  ],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [],
+  "ingredientsText": "",
+  "servingSize": {
+   "value": 300.0,
+   "unit": "g",
+   "basis": "total"
+  },
+  "photos": [
+   "20261109_131348.jpg",
+   "20261110_095718.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar",
+   "ingredients"
+  ],
+  "needPhoto": false
+ },
+ {
+  "id": "photo_8801155731625",
+  "name": "",
+  "maker": "㈜동원F&B 정읍공장/전북 정읍시 정우면 정읍북로 763",
+  "category": "",
+  "source": "photo_ai",
+  "barcode": "8801155731625",
+  "frontClaims": [],
+  "per100g": {
+   "carb": null,
+   "sugar": null,
+   "fiber": null,
+   "sweeteners": {}
+  },
+  "ingredients": [
+   [
+    "정제수",
+    "에센스위트-바에스700",
+    "혼합분유",
+    "식물성크림물엿",
+    "식물성유지",
+    "카제인나트륨",
+    "제이인산칼륨",
+    "레시틴",
+    "정제소금",
+    "코코아분말",
+    "설탕",
+    "정제소금",
+    "비타민D",
+    "CMC",
+    "카라기난",
+    "향료",
+    "천연향료",
+    "수크랄로스(감미료)\n우유",
+    "대두 함유"
+   ],
+   [
+    "정제수",
+    "에센스위트-바에스700",
+    "이소말토올리고당",
+    "폴리글리시톨액",
+    "감미료",
+    "에리스리톨",
+    "감미료",
+    "수크랄로스",
+    "감미료",
+    "스테비올배당체",
+    "감미료",
+    "혼합분유",
+    "탈지분유",
+    "유청분말",
+    "식물성크림물엿",
+    "식물성유지",
+    "팜유·말레이시아산",
+    "카제인나트륨",
+    "제이인산칼륨",
+    "레시틴",
+    "정제소금",
+    "코코아분말",
+    "설탕",
+    "정제소금",
+    "비타민D",
+    "CMC",
+    "카라기난",
+    "향료",
+    "초콜릿향",
+    "천연향료",
+    "바닐라추출물",
+    "수크랄로스(감미료)\n우유",
+    "대두 함유"
+   ]
+  ],
+  "ingredientsText": "정제수, 에센스위트-바에스700(이소말토올리고당, 폴리글리시톨액(감미료), 에리스리톨(감미료), 수크랄로스(감미료), 스테비올배당체(감미료)), 혼합분유(탈지분유, 유청분말, 네덜란드산), 식물성크림물엿, 식물성유지(팜유·말레이시아산), 카제인나트륨, 제이인산칼륨, 레시틴, 정제소금(국산), 코코아분말(스페인산), 설탕, 정제소금, 비타민D, CMC, 카라기난, 향료(초콜릿향), 천연향료(바닐라추출물), 수크랄로스(감미료)\n우유, 대두 함유",
+  "servingSize": {
+   "value": null,
+   "unit": "g",
+   "basis": null
+  },
+  "photos": [
+   "20261110_095727.jpg"
+  ],
+  "missing": [
+   "carb",
+   "sugar"
+  ],
+  "needPhoto": false
+ }
+]
