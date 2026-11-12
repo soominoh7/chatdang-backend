@@ -124,7 +124,8 @@ def search(q, limit=20):
     if not key:
         return []
     hits = [p for p in PRODUCTS if key in norm(p.get("name"))]
-    hits.sort(key=lambda p: (p["per100g"]["carb"] is None, len(p.get("name") or "")))
+    rank = {"photo_ai": 0, "label": 1, "estimated": 2, None: 3}
+    hits.sort(key=lambda p: (rank.get(p.get("nutritionSource"), 3), len(p.get("name") or "")))
     return hits[:limit]
 
 

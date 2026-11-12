@@ -52,8 +52,14 @@ def public_view(p):
     return out
 
 
+GOOD_ENOUGH = 4.0      # 숨은 탄수화물이 100g당 이 값 미만이면 '이미 괜찮은 선택' → 대체품 안 보여줌
+MIN_GAIN = 2.0         # 대체품은 숨은 탄수화물이 최소 이만큼(g/100g) 줄어야 추천
+
+
 def find_alternatives(p, grams=None, k=3):
     base_h = hidden_per100(p)
+    if base_h is not None and base_h < GOOD_ENOUGH:
+        return []
     fam = family_of(p)
     base_score = calculate_score(p, grams)
     g = base_score["servingGrams"]
@@ -62,7 +68,8 @@ def find_alternatives(p, grams=None, k=3):
         if q is p or q.get("barcode") and q.get("barcode") == p.get("barcode"):
             continue
         qh = hidden_per100(q)
-        if qh is None or needs_check(q):
+        # 추정값 제품은 추천하지 않음 (실제 라벨·사진 값이 있는 제품만)
+        if qh is None or needs_check(q) or q.get("nutritionSource") == "estimated":
             continue
         if fam:
             if family_of(q) != fam:
@@ -74,7 +81,7 @@ def find_alternatives(p, grams=None, k=3):
             sim = similarity(p, q)
             if sim < 0.2:
                 continue
-        if base_h is not None and qh >= base_h - 0.5:
+        if base_h is not None and qh > base_h - MIN_GAIN:
             continue
         r = calculate_score(q, g)
         if base_h is None and base_score["score"] is not None and (r["score"] or 0) >= base_score["score"]:
@@ -113,9 +120,11 @@ def analyze(p, grams=None):
         r["reasons"].append("감미료가 들어 있다고 표시됐는데 함량을 읽지 못했어요. 숨은 탄수화물이 실제보다 크게 나왔을 수 있어요.")
     if p.get("nutritionSource") == "estimated":
         r["reasons"].append("이 제품의 영양성분은 비슷한 제품으로 추정한 값이에요(큐빅 SynTitan 정리 데이터 기반). 성분표를 찍으면 정확해져요.")
+    h = hidden_per100(p)
     return {
         "product": public_view(p),
         "family": family_of(p),
+        "goodChoice": h is not None and h < GOOD_ENOUGH and not needs_check(p),
         "hiddenCarbPer100g": hidden_per100(p),
         "result": r,
         "alternatives": find_alternatives(p, grams),
