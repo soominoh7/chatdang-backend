@@ -34,11 +34,11 @@ PROMPT = """너는 한국 식품 포장지를 읽는 도우미야. 사진들은 
 '1g 미만'은 0.5로 적어. ml 제품이면 ml을 g처럼 숫자만 적어."""
 
 
-def _shrink(raw, size=1600):
+def _shrink(raw, size=1280):   # 작게 보낼수록 빨라요 (성분표 글자는 1280이면 충분)
     img = ImageOps.exif_transpose(Image.open(io.BytesIO(raw))).convert("RGB")
     img.thumbnail((size, size))
     buf = io.BytesIO()
-    img.save(buf, format="JPEG", quality=85)
+    img.save(buf, format="JPEG", quality=80)
     return base64.b64encode(buf.getvalue()).decode()
 
 
@@ -56,9 +56,9 @@ def call_claude(images: list[bytes]) -> dict:
     content = [{"type": "image", "source": {"type": "base64", "media_type": "image/jpeg", "data": _shrink(b)}}
                for b in images[:4]]
     content.append({"type": "text", "text": PROMPT})
-    r = httpx.post("https://api.anthropic.com/v1/messages", timeout=90,
+    r = httpx.post("https://api.anthropic.com/v1/messages", timeout=30,
                    headers={"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"},
-                   json={"model": MODEL, "max_tokens": 4000, "messages": [{"role": "user", "content": content}]})
+                   json={"model": MODEL, "max_tokens": 1500, "messages": [{"role": "user", "content": content}]})
     r.raise_for_status()
     text = "".join(b.get("text", "") for b in r.json().get("content", []) if b.get("type") == "text")
     m = re.search(r"\{.*\}", text, re.S)

@@ -11,7 +11,7 @@ from .parse import is_empty, parse_ingredient, parse_rawmtrl, split_outside_pare
 
 HACCP_URL = "https://apis.data.go.kr/B553748/CertImgListServiceV3/getCertImgListServiceV3"
 FOODSAFETY_BASE = "http://openapi.foodsafetykorea.go.kr/api"
-TIMEOUT = 8
+TIMEOUT = 3   # 개별 요청 제한 (전체 대기는 main.py에서 1.5초로 끊어요)
 
 
 def _foodsafety(service_id, cond, end=5):
