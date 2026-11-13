@@ -94,6 +94,28 @@ def _apply_estimates():
     return n
 
 
+def _apply_verified():
+    """data/verified.json: 사람이 실물 라벨과 대조해 검수한 영양성분 (가장 우선)"""
+    path = os.path.join(DATA_DIR, "verified.json")
+    if not os.path.exists(path):
+        return 0
+    with open(path, encoding="utf-8") as f:
+        items = json.load(f)
+    n = 0
+    for code, v in items.items():
+        if code.startswith("_"):
+            continue
+        p = BY_BARCODE.get(code)
+        if not p:
+            continue
+        sw = {k: v[k] for k in ("allulose", "sugar_alcohol") if v.get(k) is not None}
+        p["per100g"] = {"carb": v.get("carb"), "sugar": v.get("sugar"), "fiber": v.get("fiber"), "sweeteners": sw}
+        p["nutritionSource"] = "verified"
+        p["verifiedNote"] = v.get("note", "")
+        n += 1
+    return n
+
+
 def load():
     PRODUCTS.clear(); BY_BARCODE.clear(); BY_ID.clear()
     for name in ("products.json", "photo_products.json", "sauce_products.json"):
@@ -115,7 +137,8 @@ def load():
     # 병합으로 바뀐 객체 반영
     PRODUCTS[:] = list({id(v): v for v in BY_ID.values()}.values())
     est = _apply_estimates()
-    return {"products": len(PRODUCTS), "barcodes": len(BY_BARCODE), "estimated": est}
+    ver = _apply_verified()
+    return {"products": len(PRODUCTS), "barcodes": len(BY_BARCODE), "estimated": est, "verified": ver}
 
 
 def search(q, limit=20):
