@@ -157,7 +157,7 @@ def analyze(p, grams=None):
     if status != "scored":
         # 점수·GL·숨은 탄수화물 g 같은 계산값은 빼고, 확인된 성분(breakdown)과 주의 정보(caution, reasons)만 남김
         r["scoreHiddenPreview"] = {"range": r.get("range"), "gl": r.get("gl")}   # 개발 확인용 (화면에 쓰지 않음)
-        for k in ("score", "level", "range", "gl", "hiddenCarbGrams", "hiddenShare"):
+        for k in ("score", "level", "range", "gl", "hiddenCarbGrams", "hiddenShare", "sugarCubes"):
             r[k] = None
         r["reasons"] = [x for x in r["reasons"] if "혈당 부담의 약" not in x]
         r["reasons"].insert(0, note)

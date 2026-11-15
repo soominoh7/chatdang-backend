@@ -175,6 +175,17 @@ def level_of(gl):
     return "낮음" if gl <= 10 else ("보통" if gl < 20 else "높음")
 
 
+CUBE_G = 3.0   # 각설탕 1개 ≈ 3g
+
+
+def sugar_cubes(gl, sugar_g):
+    """혈당 부담을 '각설탕 몇 개'로 바꿔 말하기.
+    GL은 '포도당 몇 g만큼 혈당을 올리나'를 뜻하고, 설탕의 GI는 약 65라서 설탕으로는 GL ÷ 0.65 g.
+    labeled: 포장지 '당류'만 보면 각설탕 몇 개인지 / glycemic: 실제 혈당 부담은 각설탕 몇 개만큼인지"""
+    eq = max(0.0, gl) / (SUGAR_GI / 100)
+    return {"labeled": round(sugar_g / CUBE_G, 1), "glycemic": round(eq / CUBE_G, 1), "cubeGrams": CUBE_G}
+
+
 def calculate_score(p, serving_grams=None):
     g, s_basis, s_note = serving_of(p, serving_grams)
     n = p.get("per100g") or {}
@@ -236,6 +247,7 @@ def calculate_score(p, serving_grams=None):
             "score": score, "level": level_of(gl_mid), "range": rng, "servingGrams": g, "servingBasis": s_basis, "servingNote": s_note,
             "gl": {"min": round(gl_min, 1), "mid": round(gl_mid, 1), "max": round(gl_max, 1)},
             "hiddenCarbGrams": round(hidden_g, 1), "hiddenShare": hidden_share, "lowSugarLabel": low_sugar,
+            "sugarCubes": sugar_cubes(gl_mid, sugar_g),
             "breakdown": breakdown, "basis": "nutrition", "reasons": reasons,
         }
 
