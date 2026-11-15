@@ -136,12 +136,24 @@ def carb_range_of(p):
             return v
     return (5, 60)
 
+# 캔디·젤리처럼 '먹는 간식'인데 이름에 '우유맛'·'라떼맛'이 들어가 음료(200mL)로 잡히는 것 방지
+SOLID_SNACK = ("캔디", "사탕", "젤리", "구미", "초콜릿", "초코볼", "껌", "캐러멜", "카라멜", "쿠키", "비스킷",
+               "웨하스", "크래커", "과자", "스낵", "칩", "바(", "단백질바", "양갱", "푸딩")
+BEVERAGE_WORDS = ("음료", "우유", "라떼", "두유", "주스", "콜라", "사이다", "탄산", "에이드")
+
+
 def default_serving(p):
     """(g, 근거 문장) — 이름을 먼저 보고(비빔장·덮밥 등), 없으면 식품유형으로"""
-    for text in (str(p.get("name") or ""), str(p.get("category") or "")):
+    name, cat = str(p.get("name") or ""), str(p.get("category") or "")
+    solid = any(k in cat for k in SOLID_SNACK) or any(k in name for k in SOLID_SNACK)
+    for text in (name, cat):
         for k, g, note in SERVING_REF:
             if k in text:
+                if solid and k in BEVERAGE_WORDS:   # '우유맛 캔디'는 음료가 아님
+                    continue
                 return g, note
+    if solid:
+        return FALLBACK_SERVING, "캔디·젤리 등 간식 기본값 30g (음료 기준 아님)"
     return FALLBACK_SERVING, "기본값 30g (식약처 참고량 미확인 유형)"
 
 def serving_of(p, serving_grams=None):
