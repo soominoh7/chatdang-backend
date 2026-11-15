@@ -3,6 +3,7 @@ import base64
 import io
 import json
 import os
+import time
 import re
 
 import httpx
@@ -38,11 +39,11 @@ PROMPT = """너는 한국 식품 포장지를 읽는 도우미야. 사진들은 
 영양정보 표(탄수화물·당류·당알코올·알룰로스)를 가장 먼저, 가장 꼼꼼히 읽어. 원재료명은 읽히는 부분까지만 적어도 돼."""
 
 
-def _shrink(raw, size=2000):   # 성분표 글자가 작아서 너무 줄이면 못 읽어요 (Claude는 긴 변 약 1500~2000px까지 활용)
+def _shrink(raw, size=1600):   # 성분표 글자가 작아서 너무 줄이면 못 읽어요 (Claude는 긴 변 약 1500~2000px까지 활용)
     img = ImageOps.exif_transpose(Image.open(io.BytesIO(raw))).convert("RGB")
     img.thumbnail((size, size))
     buf = io.BytesIO()
-    img.save(buf, format="JPEG", quality=88)
+    img.save(buf, format="JPEG", quality=82)
     return base64.b64encode(buf.getvalue()).decode()
 
 
@@ -53,8 +54,8 @@ def _num(x):
         return None
 
 
-def _ask(model, content, key):
-    r = httpx.post("https://api.anthropic.com/v1/messages", timeout=45,
+def _ask(model, content, key, timeout=30):
+    r = httpx.post("https://api.anthropic.com/v1/messages", timeout=timeout,
                    headers={"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"},
                    json={"model": model, "max_tokens": 3000, "messages": [{"role": "user", "content": content}]})
     r.raise_for_status()
@@ -78,10 +79,13 @@ def call_claude(images: list[bytes]) -> dict:
     content = [{"type": "image", "source": {"type": "base64", "media_type": "image/jpeg", "data": _shrink(b)}}
                for b in images[:4]]
     content.append({"type": "text", "text": PROMPT})
+    t0 = time.perf_counter()
     ai = _ask(MODEL, content, key)
-    if not _has_nutrition(ai) and FALLBACK_MODEL and FALLBACK_MODEL != MODEL:
+    first = time.perf_counter() - t0
+    # 첫 시도가 영양정보를 못 읽었을 때만, 그리고 이미 오래 걸린 게 아닐 때만 재시도 (최대 12초)
+    if not _has_nutrition(ai) and FALLBACK_MODEL and FALLBACK_MODEL != MODEL and first < 8:
         try:
-            ai2 = _ask(FALLBACK_MODEL, content, key)
+            ai2 = _ask(FALLBACK_MODEL, content, key, timeout=12)
             if _has_nutrition(ai2) or not ai:
                 ai = ai2
                 ai["_model"] = FALLBACK_MODEL
