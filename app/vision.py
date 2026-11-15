@@ -104,6 +104,8 @@ def to_product(ai: dict, barcode: str | None = None) -> tuple[dict, list[str]]:
             basis = _num(n.get("total_size_g"))
         elif btype.startswith("serving"):
             basis = _num(n.get("serving_size_g"))
+    if basis and not 5 <= basis <= 2000:      # '1개당'·'1L당'처럼 g이 아닌 숫자를 기준량으로 읽은 경우
+        basis = None
     if not basis:
         basis, basis_guessed = 100, True
     conv = lambda v: None if _num(v) is None else round(_num(v) * 100 / basis, 2)
@@ -112,7 +114,8 @@ def to_product(ai: dict, barcode: str | None = None) -> tuple[dict, list[str]]:
     # 1회 제공량: '1봉지(64g)당'처럼 포장지에 1회분이 적혀 있을 때만 사용 ('총 내용량'은 1회분이 아니라서 제외)
     sv = _num(n.get("serving_size_g")) or (basis if btype.startswith("serving") and not basis_guessed else None)
     total = _num(n.get("total_size_g"))
-    serving = {"value": sv, "basis": "serving", "note": "포장지 1회 제공량"} if sv and (not total or sv < total) else {}
+    ok = sv and 5 <= sv <= 600 and (not total or sv < total)   # 1회분으로 말이 되는 양만 사용 (아니면 식약처 기준)
+    serving = {"value": sv, "basis": "serving", "note": "포장지 1회 제공량"} if ok else {}
     names, flat = parse_rawmtrl(ai.get("ingredients_text"))
     code = barcode or re.sub(r"\D", "", str(ai.get("barcode") or "")) or None
 
