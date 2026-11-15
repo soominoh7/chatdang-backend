@@ -110,6 +110,9 @@ def _apply_verified():
             continue
         sw = {k: v[k] for k in ("allulose", "sugar_alcohol") if v.get(k) is not None}
         p["per100g"] = {"carb": v.get("carb"), "sugar": v.get("sugar"), "fiber": v.get("fiber"), "sweeteners": sw}
+        if v.get("ingredients"):   # 원본 사진에서 확인한 원재료 (AI가 놓친 경우 채움)
+            p["ingredients"] = [x.split("(")[0] for x in v["ingredients"]]
+            p["ingredientsFlat"] = [y.strip(") ") for x in v["ingredients"] for y in x.replace("(", ",").split(",") if y.strip(") ")]
         p["nutritionSource"] = "verified"
         p["verifiedNote"] = v.get("note", "")
         n += 1
