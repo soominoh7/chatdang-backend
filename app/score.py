@@ -212,7 +212,7 @@ def calculate_score(p, serving_grams=None):
             gi_mid = sum(gi * wi for gi, wi in zip(gis, w)) / sum(w)
             gi_min, gi_max = min(gis), max(gis)
         elif hidden_g > 0:
-            gi_min, gi_mid, gi_max = 0, 40, 80     # 원료를 못 찾음 → 넓은 범위
+            gi_min, gi_mid, gi_max = 20, 40, 60    # 원료를 못 찾음 → 범위로 표시 (너무 넓으면 의미가 없어 ±20으로 제한)
             reasons.append("당류로 표시되지 않은 탄수화물이 있지만 어떤 원료인지 원재료에서 확인되지 않았어요.")
         else:
             gi_min = gi_mid = gi_max = 0
