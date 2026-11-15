@@ -33,7 +33,7 @@ PROMPT = """너는 한국 식품 포장지를 읽는 도우미야. 사진들은 
    "fiber_g": 식이섬유 g, "sugar_alcohol_g": 당알코올 g, "allulose_g": 알룰로스 g
  }
 }
-'1g 미만'은 0.5로 적어. ml 제품이면 ml을 g처럼 숫자만 적어.
+'1g 미만'은 0.5로 적어. '총 내용량 260g / 100g당 560kcal'처럼 둘 다 있으면 영양 수치가 따라오는 쪽(보통 '100g당')이 기준이야(basis_type 100g, basis_amount_g 100). 기준을 확신 못 해도 숫자(탄수화물 등)는 꼭 적어. '1봉지(64g)당'처럼 1회분 기준이면 basis_type serving, basis_amount_g 64, serving_size_g 64로 적어. ml 제품이면 ml을 g처럼 숫자만 적어.
 둥근 병·통에 붙은 라벨이라 글자가 휘거나 가장자리가 잘려 있을 수 있어. 여러 장이면 서로 이어 붙여 읽어.
 영양정보 표(탄수화물·당류·당알코올·알룰로스)를 가장 먼저, 가장 꼼꼼히 읽어. 원재료명은 읽히는 부분까지만 적어도 돼."""
 
@@ -93,10 +93,26 @@ def call_claude(images: list[bytes]) -> dict:
 def to_product(ai: dict, barcode: str | None = None) -> tuple[dict, list[str]]:
     """AI 결과 → 우리 제품 형식 + 확인 필요 목록"""
     n = ai.get("nutrition") or {}
-    basis = _num(n.get("basis_amount_g")) or (100 if str(n.get("basis_type")).startswith("100") else None)
-    conv = lambda v: None if _num(v) is None or not basis else round(_num(v) * 100 / basis, 2)
+    # 기준량 정하기: 못 읽었으면 기준 종류로 추정하고, 그래도 모르면 100g당으로 보고 '확인 필요' 표시
+    btype = str(n.get("basis_type") or "")
+    basis = _num(n.get("basis_amount_g"))
+    basis_guessed = False
+    if not basis:
+        if btype.startswith("100"):
+            basis = 100
+        elif btype.startswith("total"):
+            basis = _num(n.get("total_size_g"))
+        elif btype.startswith("serving"):
+            basis = _num(n.get("serving_size_g"))
+    if not basis:
+        basis, basis_guessed = 100, True
+    conv = lambda v: None if _num(v) is None else round(_num(v) * 100 / basis, 2)
     per100 = {"carb": conv(n.get("carb_g")), "sugar": conv(n.get("sugar_g")), "fiber": conv(n.get("fiber_g")),
               "sweeteners": {k: conv(n.get(f"{k}_g")) for k in ("sugar_alcohol", "allulose") if conv(n.get(f"{k}_g")) is not None}}
+    # 1회 제공량: '1봉지(64g)당'처럼 포장지에 1회분이 적혀 있을 때만 사용 ('총 내용량'은 1회분이 아니라서 제외)
+    sv = _num(n.get("serving_size_g")) or (basis if btype.startswith("serving") and not basis_guessed else None)
+    total = _num(n.get("total_size_g"))
+    serving = {"value": sv, "basis": "serving", "note": "포장지 1회 제공량"} if sv and (not total or sv < total) else {}
     names, flat = parse_rawmtrl(ai.get("ingredients_text"))
     code = barcode or re.sub(r"\D", "", str(ai.get("barcode") or "")) or None
 
@@ -104,6 +120,8 @@ def to_product(ai: dict, barcode: str | None = None) -> tuple[dict, list[str]]:
     c, s = per100["carb"], per100["sugar"]
     if c is None:
         issues.append("영양성분표를 읽지 못했어요. 영양정보 칸이 잘 보이게 다시 찍어 주세요.")
+    elif basis_guessed:
+        issues.append("영양정보가 몇 g 기준인지 못 읽어서 100g당으로 계산했어요. 확인이 필요해요.")
     elif not 0 <= c <= 100:
         issues.append(f"탄수화물 값({c}g/100g)이 이상해요. 확인이 필요해요.")
     if c is not None and s is not None and s > c + 0.5:
@@ -121,6 +139,6 @@ def to_product(ai: dict, barcode: str | None = None) -> tuple[dict, list[str]]:
         "source": "photo_ai", "barcode": code,
         "frontClaims": ai.get("front_claims") or [],
         "per100g": per100, "ingredients": names, "ingredientsFlat": flat,
-        "servingSize": {},
+        "servingSize": serving,
     }
     return p, issues

@@ -45,7 +45,7 @@ def _normalize(p):
     p["per100g"] = {"carb": n.get("carb"), "sugar": n.get("sugar"), "fiber": n.get("fiber"),
                     "sweeteners": {k: v for k, v in (n.get("sweeteners") or {}).items() if v is not None}}
     p.setdefault("servingSize", {})
-    if p.get("source") == "photo_ai":
+    if p.get("source") == "photo_ai" and (p.get("servingSize") or {}).get("basis") != "serving":
         p["servingSize"] = {}          # 사진의 '총 내용량'이 1회 섭취량으로 잡히는 것 방지 → 식약처 기준표 사용
     p["nutritionSource"] = "label" if p["per100g"]["carb"] is not None else None
     if p["nutritionSource"] and p.get("source") == "photo_ai":
