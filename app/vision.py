@@ -11,6 +11,8 @@ from PIL import Image, ImageOps
 from .parse import parse_rawmtrl
 
 MODEL = os.environ.get("VISION_MODEL", "claude-haiku-5-5")
+# 첫 시도에서 영양정보를 못 읽으면(둥근 통·반사·작은 글씨) 더 정확한 모델로 한 번 더 시도
+FALLBACK_MODEL = os.environ.get("VISION_FALLBACK_MODEL", "claude-sonnet-5-5")
 
 PROMPT = """너는 한국 식품 포장지를 읽는 도우미야. 사진들은 모두 같은 제품의 앞면/뒷면이야.
 사진에 보이는 글자만 그대로 옮기고, 안 보이는 값은 null로 둬. 추측해서 채우지 마.
@@ -31,7 +33,9 @@ PROMPT = """너는 한국 식품 포장지를 읽는 도우미야. 사진들은 
    "fiber_g": 식이섬유 g, "sugar_alcohol_g": 당알코올 g, "allulose_g": 알룰로스 g
  }
 }
-'1g 미만'은 0.5로 적어. ml 제품이면 ml을 g처럼 숫자만 적어."""
+'1g 미만'은 0.5로 적어. ml 제품이면 ml을 g처럼 숫자만 적어.
+둥근 병·통에 붙은 라벨이라 글자가 휘거나 가장자리가 잘려 있을 수 있어. 여러 장이면 서로 이어 붙여 읽어.
+영양정보 표(탄수화물·당류·당알코올·알룰로스)를 가장 먼저, 가장 꼼꼼히 읽어. 원재료명은 읽히는 부분까지만 적어도 돼."""
 
 
 def _shrink(raw, size=2000):   # 성분표 글자가 작아서 너무 줄이면 못 읽어요 (Claude는 긴 변 약 1500~2000px까지 활용)
@@ -49,6 +53,24 @@ def _num(x):
         return None
 
 
+def _ask(model, content, key):
+    r = httpx.post("https://api.anthropic.com/v1/messages", timeout=45,
+                   headers={"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"},
+                   json={"model": model, "max_tokens": 3000, "messages": [{"role": "user", "content": content}]})
+    r.raise_for_status()
+    text = "".join(b.get("text", "") for b in r.json().get("content", []) if b.get("type") == "text")
+    m = re.search(r"\{.*\}", text, re.S)
+    try:
+        return json.loads(m.group(0)) if m else {}
+    except ValueError:
+        return {}
+
+
+def _has_nutrition(ai):
+    n = (ai or {}).get("nutrition") or {}
+    return _num(n.get("carb_g")) is not None
+
+
 def call_claude(images: list[bytes]) -> dict:
     key = os.environ.get("ANTHROPIC_API_KEY")
     if not key:
@@ -56,13 +78,16 @@ def call_claude(images: list[bytes]) -> dict:
     content = [{"type": "image", "source": {"type": "base64", "media_type": "image/jpeg", "data": _shrink(b)}}
                for b in images[:4]]
     content.append({"type": "text", "text": PROMPT})
-    r = httpx.post("https://api.anthropic.com/v1/messages", timeout=30,
-                   headers={"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"},
-                   json={"model": MODEL, "max_tokens": 3000, "messages": [{"role": "user", "content": content}]})
-    r.raise_for_status()
-    text = "".join(b.get("text", "") for b in r.json().get("content", []) if b.get("type") == "text")
-    m = re.search(r"\{.*\}", text, re.S)
-    return json.loads(m.group(0)) if m else {}
+    ai = _ask(MODEL, content, key)
+    if not _has_nutrition(ai) and FALLBACK_MODEL and FALLBACK_MODEL != MODEL:
+        try:
+            ai2 = _ask(FALLBACK_MODEL, content, key)
+            if _has_nutrition(ai2) or not ai:
+                ai = ai2
+                ai["_model"] = FALLBACK_MODEL
+        except Exception:
+            pass
+    return ai
 
 
 def to_product(ai: dict, barcode: str | None = None) -> tuple[dict, list[str]]:
