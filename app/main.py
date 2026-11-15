@@ -118,7 +118,12 @@ async def analyze_photo(files: list[UploadFile] = File(..., description="포장�
     try:
         ai = vision.call_claude(images)
     except Exception as e:
-        raise HTTPException(502, f"사진 분석에 실패했어요: {e}")
+        msg = str(e)
+        if "identify image" in msg or "image file" in msg:
+            raise HTTPException(400, "사진 파일을 열 수 없어요. 다시 찍어 주세요.")
+        if "timed out" in msg.lower() or "timeout" in msg.lower():
+            raise HTTPException(504, "사진 분석이 오래 걸려요. 잠시 후 다시 시도해 주세요.")
+        raise HTTPException(502, "사진 분석에 실패했어요. 다시 찍어 주세요.")
     p, issues = vision.to_product(ai, barcode)
     p = data.add_product(p)
     res = analyze(p, grams)

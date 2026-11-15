@@ -158,7 +158,7 @@ def default_serving(p):
 
 def serving_of(p, serving_grams=None):
     """(g, 근거 종류, 근거 문장)"""
-    if serving_grams:
+    if serving_grams and 0.5 <= float(serving_grams) <= 2000:   # 0·음수·말도 안 되게 큰 값은 무시하고 기본 섭취량 사용
         return float(serving_grams), "user", "사용자가 선택한 양"
     s = (p.get("servingSize") or {})
     if s.get("value"):
