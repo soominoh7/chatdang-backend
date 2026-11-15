@@ -201,6 +201,10 @@ def calculate_score(p, serving_grams=None):
         hidden_g = max(0.0, carb * f - sugar_g - (fiber or 0) * f - sum(declared.values()))
         sugar_gl = sugar_g * SUGAR_GI / 100
 
+        # 영양표에 당알코올이 따로 적혀 있으면 그 양은 이미 위에서 뺐으므로, 숨은 탄수화물 원료에서 당알코올은 제외
+        # (안 그러면 이소말트 같은 낮은 GI가 범위 최솟값을 끌어내려 '11~100점'처럼 범위가 터무니없이 넓어짐)
+        if declared.get("sugar_alcohol") and any(s["kind"] == "hidden" for s in hidden_srcs):
+            hidden_srcs = [s for s in hidden_srcs if s["kind"] != "polyol"]
         if hidden_g > 0 and hidden_srcs:
             gis = [s["gi"] for s in hidden_srcs]
             # 표시 순서 가중 평균(앞에 있을수록 많이 들었다고 가정)
