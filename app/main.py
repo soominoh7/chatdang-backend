@@ -142,10 +142,17 @@ def demo(grams: float | None = None):
 @app.get("/api/compare")
 def compare(ids: str = Query(..., description="쉼표로 구분한 제품 id"), grams: float = 15):
     """여러 제품을 같은 양으로 비교"""
-    out = []
+    out, missing = [], []
     for i in ids.split(","):
-        p = data.BY_ID.get(i.strip()) or data.BY_BARCODE.get(i.strip())
+        i = i.strip()
+        if not i:
+            continue
+        code = i.replace("photo_", "")
+        p = (data.BY_ID.get(i) or data.BY_BARCODE.get(i) or data.BY_BARCODE.get(code)
+             or data.BY_BARCODE.get(data.BARCODE_FIX.get(code, code)))
         if p:
             r = analyze(p, grams)
             out.append({"product": public_view(p), "hiddenCarbPer100g": r["hiddenCarbPer100g"], "result": r["result"]})
-    return {"servingGrams": grams, "items": out}
+        else:
+            missing.append(i)   # 서버에 없는 제품(사진으로 분석했는데 서버가 재시작된 경우 등) → 프론트가 가진 결과로 보여주기
+    return {"servingGrams": grams, "items": out, "missing": missing}

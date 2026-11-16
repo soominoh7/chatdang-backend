@@ -21,7 +21,8 @@ PROMPT = """너는 한국 식품 포장지를 읽는 도우미야. 사진들은 
 {
  "product_name": "제품명(앞면 기준)",
  "maker": "제조사 또는 판매원",
- "food_type": "식품유형(예: 소스, 과자, 초콜릿가공품)",
+ "food_type": "식품유형(예: 소스, 과자, 초콜릿가공품, 탄산음료, 가공유)",
+ "is_liquid": 마시는 제품이거나 내용량·영양정보가 mL/L 단위면 true 아니면 false,
  "barcode": "바코드 숫자",
  "front_claims": ["저당", "제로슈거", "알룰로스" 같은 앞면 광고 문구들],
  "ingredients_text": "원재료명 칸 전체를 적힌 그대로",
@@ -148,4 +149,8 @@ def to_product(ai: dict, barcode: str | None = None) -> tuple[dict, list[str]]:
         "per100g": per100, "ingredients": names, "ingredientsFlat": flat,
         "servingSize": serving,
     }
+    if ai.get("is_liquid") is True:   # 음료는 mL 단위로 표시하고, 1회 섭취량도 음료 기준(200mL)을 쓰게
+        p["unit"] = "ml"
+        if not p["category"]:
+            p["category"] = "음료"
     return p, issues

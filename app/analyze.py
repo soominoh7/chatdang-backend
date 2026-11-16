@@ -1,6 +1,6 @@
 """제품 하나 분석: 점수 + 숨은 탄수화물 + 대체품"""
 from . import data
-from .score import calculate_score, similarity
+from .score import calculate_score, similarity, default_serving
 
 # 대체품은 같은 계열 안에서만 (노트북 03 소스 시연 셀과 같은 기준)
 FAMILY = {
@@ -68,6 +68,7 @@ def public_view(p):
     keys = ("id", "name", "barcode", "category", "maker", "manufacturer", "source", "per100g",
             "ingredients", "frontClaims", "servingSize", "nutritionSource", "images")
     out = {k: p.get(k) for k in keys if p.get(k) not in (None, "", [], {})}
+    out["unit"] = p.get("unit") or ("ml" if str(default_serving(p)[1]).startswith("음료") else "g")   # 화면 단위 표시용
     out["nutritionEstimated"] = p.get("nutritionSource") == "estimated"
     out["needsCheck"] = needs_check(p)
     return out
