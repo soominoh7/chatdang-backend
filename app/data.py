@@ -160,6 +160,12 @@ def add_product(p):
     p = _normalize(p)
     if p["barcode"] and p["barcode"] in BY_BARCODE:
         old = BY_BARCODE[p["barcode"]]
+        if old.get("nutritionSource") in ("verified", "label"):
+            # 검수값·공공데이터 표시값이 있는 제품은 사진으로 덮어쓰지 않고 그대로 사용
+            # (성분표 사진에 바코드 숫자가 찍혀 있으면 검수된 결과가 바로 나옴)
+            if not old.get("ingredients") and p.get("ingredients"):
+                old["ingredients"], old["ingredientsFlat"] = p["ingredients"], p.get("ingredientsFlat", [])
+            return old
         p = _merge(old, p)
         BY_ID[old["id"]] = p
         PRODUCTS[:] = [p if x is old else x for x in PRODUCTS]
